@@ -66,9 +66,10 @@ void Day11::Solve() {
                     queue.pop();
                 }
             }
-            if(i == 100) {
-                partOne = partOneBuffer;
-            }
+        }
+
+        if(i == 100) {
+            partOne = partOneBuffer;
         }
 
         if(popped.size() == field.size() * field.back().size()) {
